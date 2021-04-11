@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emulator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: emulator
+  template:
+    metadata:
+      labels:
+        app: emulator
+    spec:
+      containers:
+        - name: emulator
+          image: xumes/microservice-emulator:latest
+          volumeMounts:
+            - name: emulator-volume
+              mountPath: /go/src/.env
+              subPath: .env
+
+      volumes:
+        - name: emulator-volume
+          configMap:
+            name: emulator-conf
+            items:
+              - key: env
+                path: .env
+
