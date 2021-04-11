@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: emulator
-          image: xumes/microservice-emulator:latest
+          image: xumes/microservices-emulator:latest
           volumeMounts:
             - name: emulator-volume
               mountPath: /go/src/.env

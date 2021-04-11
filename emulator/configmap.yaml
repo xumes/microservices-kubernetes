@@ -6,9 +6,9 @@ data:
   env: |
     KafkaReadTopic=route.new-direction
     KafkaProduceTopic=route.new-position
-    KafkaBootstrapServers=pkc-lzvrd.us-west4.gcp.confluent.cloud:9092
+    KafkaBootstrapServers=pkc-4yyd6.us-east1.gcp.confluent.cloud:9092
     KafkaConsumerGroupId=emulator
     security.protocol="SASL_SSL"
     sasl.mechanisms="PLAIN"
-    sasl.username="EBNIKUAMEB2PJ2TZ"
-    sasl.password="59VVz1gr7l4tl4ikK4Lzlk/vLZB++7ek5vOC73cxtNsKLW7oUtbfxj/PicpbZ9rq"
+    sasl.username="6Q4KTSAVK2R34JXA"
+    sasl.password="lytkrvs3P8XK9f3zOjd2IP1xrobu4tN4JKC8gnVeskSUvFvDbqTworLFhabh1yPY"
