@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: xumes/microservice-backend
+          image: xumes/microservices-backend:latest
           ports:
             - containerPort: 3000
           volumeMounts:
